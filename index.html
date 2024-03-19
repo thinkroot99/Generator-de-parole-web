@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator de Parole - O unealtă gratuit</title>
+    <meta name="description" content="Folosește acest instrument online gratuit pentru a genera parole sigure și complexe. Lungimea, caractere speciale și numărul de parole sunt personalizabile.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generează parole</h1>
+        <label for="length">Alege lungimea parolei <br>(minim 8 caractere):</label>
+        <input type="number" id="length" min="8" required>
+        <br><br>
+        <label for="special_chars">Selectează pentru caractere speciale:</label>
+        <input type="checkbox" id="special_chars">
+        <br><br>
+        <label for="num_passwords">Alege un număr de parole care să fie generate:</label>
+        <input type="number" id="num_passwords" min="1" required>
+        <br><br>
+        <button onclick="generatePasswords()">Generează parolele</button>
+        <div id="feedback"></div>
+        <ul id="passwords"></ul>
+    </div>
+    <footer>
+        <p>Codul este open source. Poți găsi sursa pe <a href="https://github.com/utilizator/nume-proiect" target="_blank">GitHub</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
