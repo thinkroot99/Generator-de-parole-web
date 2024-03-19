@@ -1,5 +1,4 @@
 # Generator de parole web
-Desigur! Iată o descriere a site-ului "Generare Parole - Tool Online Gratuit":
 
 ### Descriere:
 - Generator de parole este un instrument online util și gratuit, care vă permite să generați parole sigure și complexe într-un mod rapid și simplu. Cu ajutorul acestui site, puteți crea parole personalizate, adaptate nevoilor dumneavoastră de securitate.
