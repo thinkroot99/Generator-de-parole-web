@@ -1,43 +1,66 @@
+/* Culori Nord */
+:root {
+    --nord-0: #2e3440; /* Negru strălucitor */
+    --nord-1: #3b4252; /* Negru moale */
+    --nord-2: #434c5e; /* Gri strălucitor */
+    --nord-3: #4c566a; /* Gri moale */
+    --nord-4: #d8dee9; /* Alb gri */
+    --nord-5: #e5e9f0; /* Alb */
+    --nord-6: #8fbcbb; /* Turcoaz strălucitor */
+    --nord-7: #88c0d0; /* Turcoaz moale */
+    --nord-8: #81a1c1; /* Albastru strălucitor */
+    --nord-9: #5e81ac; /* Albastru moale */
+    --nord-10: #bf616a; /* Roșu strălucitor */
+    --nord-11: #d08770; /* Portocaliu strălucitor */
+    --nord-12: #ebcb8b; /* Galben strălucitor */
+    --nord-13: #a3be8c; /* Verde strălucitor */
+    --nord-14: #b48ead; /* Mov strălucitor */
+    --nord-15: #eceff4; /* Alb strălucitor */
+}
+body {
+    background-color: var(--nord-1); /* Schimbăm culoarea de fundal a întregii pagini la negru moale */
+}
+
 /* Stiluri pentru container */
 .container {
     width: 350px;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--nord-4); /* Schimbăm culoarea de fundal la alb gri */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: absolute; /* Se adaugă pozitionarea absolută */
-    top: 50%; /* Se plasează la jumătatea înălțimii ecranului */
-    left: 50%; /* Se plasează la jumătatea lățimii ecranului */
-    transform: translate(-50%, -50%); /* Se corectează poziționarea */
-    overflow-y: auto; /* Se adaugă un scrollbar vertical când este nevoie */
-    max-height: calc(100vh - 40px); /* Se setează o înălțime maximă pentru a menține containerul în cadrul ecranului */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    max-height: calc(100vh - 40px);
 }
 
 h1 {
-    color: #333;
+    color: var(--nord-3); /* Schimbăm culoarea textului h1 la gri moale */
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: #555;
+    color: var(--nord-2); /* Schimbăm culoarea textului etichetei la gri strălucitor */
 }
 
 .input-field {
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--nord-3); /* Schimbăm culoarea bordurii la gri moale */
 }
 
 .input-field:focus {
-    border-color: #007bff;
+    border-color: var(--nord-8); /* Schimbăm culoarea bordurii la albastru strălucitor la focalizare */
 }
 
 .button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--nord-8); /* Schimbăm culoarea de fundal la albastru strălucitor */
+    color: var(--nord-4); /* Schimbăm culoarea textului la alb gri */
     border: none;
     cursor: pointer;
     padding: 8px;
@@ -45,38 +68,37 @@ label {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: var(--nord-9); /* Schimbăm culoarea de fundal la albastru moale la planificarea cursorului */
 }
 
 #feedback {
     margin-top: 10px;
-    color: red;
+    color: var(--nord-10); /* Schimbăm culoarea textului feedback-ului la roșu strălucitor */
 }
 
 /* Stiluri pentru lista de parole */
 #passwords {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Se elimină marginile implicite */
-    overflow-y: auto; /* Se adaugă un scrollbar vertical când este nevoie */
+    margin: 0;
+    overflow-y: auto;
 }
 
 #passwords li {
     margin-bottom: 5px;
-    border-bottom: 1px solid #ccc; /* Linie sub fiecare parolă */
-    padding-bottom: 5px; /* Spațiu între parolă și linie */
-    word-wrap: break-word; /* Se asigură împărțirea cuvintelor */
+    border-bottom: 1px solid var(--nord-3); /* Schimbăm culoarea liniei de sub fiecare parolă la gri moale */
+    padding-bottom: 5px;
+    word-wrap: break-word;
 }
 
 /* Stiluri pentru footer */
-/* Stiluri pentru footer */
 footer {
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--nord-1); /* Schimbăm culoarea de fundal la negru moale */
+    color: var(--nord-4); /* Schimbăm culoarea textului la alb gri */
     text-align: center;
     width: 100%;
-    position: fixed; /* Se folosește position: fixed pentru a fixa footer-ul în partea de jos a ecranului */
-    bottom: 0; /* Se ancorează footer-ul în partea de jos a ecranului */
+    position: fixed;
+    bottom: 0;
 }
 
